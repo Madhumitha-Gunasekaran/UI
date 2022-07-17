@@ -1,10 +1,7 @@
 ## Install
       npm install
 ## node Server
-  -Navigate to app/cors-server.
-      ##node index.js
+  -Navigate to app/cors-server and run node index.js
 ## Angular Development Server
-  -Run the command 
-    ##ng serve 
-  -Navigate to http://localhost:4200/ 
+  -Run the command  ng serve and navigate to http://localhost:4200/ 
 
