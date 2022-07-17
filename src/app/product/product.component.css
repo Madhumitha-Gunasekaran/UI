@@ -1,0 +1,121 @@
+mat-card {
+    margin-bottom: 10px !important;
+    border-radius: 0px !important;
+    margin-right: 10px !important
+}
+
+.blue-color {
+    color: blue;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+}
+
+.mat-card-image {
+    margin: auto !important;
+    width: calc(100% + -6px) !important;
+    height: 227px !important;
+
+}
+
+mat-card-content {
+    height: 150px !important;
+}
+
+.product-name {
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+p {
+    margin-bottom: 0rem !important;
+}
+
+.product-location {
+    display: flex;
+}
+
+.product-location-name {
+    color: rgba(0, 0, 0, 0.38) !important;
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 27px;
+    max-height: 32px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 0.75rem !important;
+
+}
+
+.product-price-display {
+    color: #e96414;
+}
+
+.product-price-discount {
+    border-radius: 18px;
+    border-width: 3px 9px;
+    color: red;
+}
+
+.ratings-count {
+    color: rgba(0, 0, 0, 0.38) !important;
+    font-size: 0.75rem !important;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 17px !important
+}
+
+.absolute-rating {
+    font-size: 13px !important;
+
+}
+
+.mat-button {
+    background: #008fd1;
+    color: white;
+    display: flex;
+    margin: auto;
+}
+
+.product-pagination {
+    display: flex;
+    float: right;
+    margin: auto
+}
+
+.previous {
+    color: black !important;
+    text-decoration: none !important;
+    border: 1px solid #8e8989;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer
+}
+
+.previous-disabled {
+    color: grey !important;
+    cursor: not-allowed;
+    text-decoration: none;
+    border: 1px solid #8e8989;
+    padding: 5px 10px 5px 10px;
+}
+
+.items-per-page {
+    font-size: 13px;
+    color: grey;
+    padding: 6px;
+}
+
+.page-count {
+    font-size: 13px;
+    color: grey;
+    padding: 6px;
+}

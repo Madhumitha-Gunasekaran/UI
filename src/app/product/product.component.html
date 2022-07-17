@@ -1,0 +1,44 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 justify-content-center pb-5">
+  <mat-card class="col mt-5" *ngFor="let product of productDetails.products">
+    <img mat-card-image src="{{product.images[0]}}" alt="img">
+    <!-- product-content -->
+    <mat-card-content>
+      <div class="product-name">{{product.name}} </div>
+      <div class="product-content">
+        <p class="product-price-display"> <strong>{{product.price.priceDisplay}}</strong></p>
+        <div class="product-content" *ngIf="product.price.discount > 0">
+          <p class="pr-3"> <del>{{product.price.strikeThroughPriceDisplay}}</del>
+            <span class="product-price-discount"> <strong> {{product.price.discount}}% </strong></span>
+          </p>
+        </div>
+        <div class="product-location"> <span class="material-icons blue-color"> location_on</span>
+          <span class="product-location-name">{{product.location}}</span>
+        </div>
+        <div class="product-content" *ngIf="product.review.absoluteRating > 0">
+          <span class="material-icons rating">star</span> <span
+            class="absolute-rating">{{product.review.absoluteRating}}</span> <span class="ratings-count">
+            ({{product.review.count}}) </span>
+        </div>
+      </div>
+    </mat-card-content>
+<!-- Button -->
+    <button mat-button (click)="addToCart()">Add to Cart</button>
+  </mat-card>
+</div>
+<!-- Pagination -->
+<div class="product-pagination pb-5">
+  <p class="items-per-page"><strong>Items Per Page </strong> - 24 </p>
+  <p class="page-count"> <strong> Page </strong>{{pagecount}} <strong> of </strong> {{totalPage}}</p>
+  <ng-template [ngIf]="this.pagecount>=1" [ngIfElse]="previousDisable">
+    <span class="previous" (click)="previous()">❮</span>
+  </ng-template>
+  <ng-template #previousDisable>
+    <span class="previous-disabled" disabled>❮</span>
+  </ng-template>
+  <ng-template [ngIf]="pagecount<totalPage" [ngIfElse]="nextDisable">
+    <span class="previous" (click)="next()">❯</span>
+  </ng-template>
+  <ng-template #nextDisable>
+    <span class="previous-disabled" disabled> ❯ </span>
+  </ng-template>
+</div>

@@ -1,0 +1,8 @@
+.container{
+    padding-right:1.5rem !important;
+    padding-left:2.25rem !important;
+}
+.spinner-border{
+    display: flex;
+    margin: auto;
+}

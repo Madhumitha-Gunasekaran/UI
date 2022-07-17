@@ -1,0 +1,12 @@
+.search {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-left: 11px;
+}
+
+.search-icon {
+    border: 1px solid black;
+}

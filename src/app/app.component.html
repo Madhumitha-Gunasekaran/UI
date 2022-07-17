@@ -1,0 +1,11 @@
+
+<div class="container">
+  <app-search (newSearchEvent)="receiveEvent($event)"></app-search>
+  <div *ngIf="loadSpinner">
+  <div class="spinner-border" role="status">  
+  </div>
+</div>
+  <ng-template [ngIf]="productDetails">
+    <app-product [productDetails]="productDetails"></app-product>
+  </ng-template>
+</div>
